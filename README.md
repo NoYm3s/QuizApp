@@ -7,11 +7,11 @@
 ## 🇷🇺 Русский
 
 ### Описание
-QuizApp — это приложение для macOS, которое помогает готовиться к тестам и контрольным работам. Включает 35 вопросов по теме "Изобретения и открытия" с возможностью добавления своих вопросов.
+QuizApp — это приложение для macOS, которое помогает готовиться к тестам и контрольным работам. С возможностью добавления своих вопросов.
 
 ### ✨ Возможности
 
-- **🚀 Быстрый тест** — прохождение теста из всех 35 вопросов в случайном порядке
+- **🚀 Быстрый тест** — прохождение теста из всех вопросов в случайном порядке
 - **📚 Мои тесты** — создание собственных наборов вопросов
   - Ручной выбор вопросов
   - 🎲 Случайный выбор определённого количества вопросов
@@ -106,11 +106,11 @@ QuizApp/
 ## 🇬🇧 English
 
 ### Description
-QuizApp is a native macOS application that helps you prepare for tests and quizzes. It includes 35 questions on "Inventions & Discoveries" with the ability to add your own questions.
+QuizApp is a native macOS application that helps you prepare for tests and quizzes. It allows you to to add your own questions.
 
 ### ✨ Features
 
-- **🚀 Quick Quiz** — take a test with all 35 questions in random order
+- **🚀 Quick Quiz** — take a test with all your questions in random order
 - **📚 My Tests** — create custom question sets
   - Manual question selection
   - 🎲 Random selection of a specific number of questions

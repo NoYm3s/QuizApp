@@ -259,29 +259,7 @@ class TestManager: ObservableObject {
 }
 
 // MARK: - Question
-struct Question: Identifiable, Codable {
-    let id: UUID
-    var question: String
-    var correct: String
-    var wrong: [String]
-    var questionTranslation: String?
-    var answerTranslation: String?
-    
-    init(id: UUID = UUID(), question: String, correct: String, wrong: [String], questionTranslation: String? = nil, answerTranslation: String? = nil) {
-        self.id = id
-        self.question = question
-        self.correct = correct
-        self.wrong = wrong
-        self.questionTranslation = questionTranslation
-        self.answerTranslation = answerTranslation
-    }
-    
-    var allAnswers: [String] {
-        var a = wrong
-        a.insert(correct, at: Int.random(in: 0...wrong.count))
-        return a
-    }
-}
+let defaultQuestions: [Question] = []
 
 // MARK: - File Manager
 class QuestionFileManager {
