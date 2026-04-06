@@ -176,9 +176,47 @@ QuizApp/
 
 ## 🪟 Windows Version
 
-Для Windows доступна HTML-версия приложения. Откройте `Windows/quiz.html` в любом браузере.
+### Установка на Windows
 
-For Windows, an HTML version is available. Open `Windows/quiz.html` in any browser.
+1. Скачайте файл **`quiz.html`** из папки [`Windows/`](Windows/) на GitHub
+2. Сохраните его на рабочий стол или в любую папку
+3. Откройте файл двойным кликом — он запустится в браузере (Chrome, Edge, Firefox)
+
+**Ничего устанавливать не нужно!** Приложение работает прямо в браузере.
+
+### Функции Windows-версии:
+- ✅ 35 вопросов по теме "Изобретения и открытия"
+- ✅ Случайный порядок вопросов и ответов
+- ✅ Подсветка правильных/неправильных ответов
+- ✅ Экран результатов с процентом
+- ✅ Переключение языка RU/EN (кнопка вверху справа)
+- ✅ Кнопка "Пройти заново"
+
+### Для macOS:
+HTML-версию также можно открыть на Mac — просто откройте `Windows/quiz.html` в Safari.
+
+---
+
+## 🪟 Windows Version
+
+### Installation on Windows
+
+1. Download the **`quiz.html`** file from the [`Windows/`](Windows/) folder on GitHub
+2. Save it to your desktop or any folder
+3. Double-click the file — it will open in your browser (Chrome, Edge, Firefox)
+
+**No installation required!** The app runs directly in the browser.
+
+### Windows Version Features:
+- ✅ 35 questions on "Inventions & Discoveries"
+- ✅ Random question and answer order
+- ✅ Correct/wrong answer highlighting
+- ✅ Results screen with percentage
+- ✅ RU/EN language toggle (button in top right)
+- ✅ "Restart" button
+
+### For macOS:
+The HTML version also works on Mac — just open `Windows/quiz.html` in Safari.
 
 ---
 
