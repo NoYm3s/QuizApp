@@ -185,7 +185,7 @@ QuizApp/
 **Ничего устанавливать не нужно!** Приложение работает прямо в браузере.
 
 ### Функции Windows-версии:
-- ✅ 35 вопросов по теме "Изобретения и открытия"
+- ✅ Возможность добавлять свои вопросы
 - ✅ Случайный порядок вопросов и ответов
 - ✅ Подсветка правильных/неправильных ответов
 - ✅ Экран результатов с процентом
@@ -208,7 +208,7 @@ HTML-версию также можно открыть на Mac — просто
 **No installation required!** The app runs directly in the browser.
 
 ### Windows Version Features:
-- ✅ 35 questions on "Inventions & Discoveries"
+- ✅ Add your own questions
 - ✅ Random question and answer order
 - ✅ Correct/wrong answer highlighting
 - ✅ Results screen with percentage
