@@ -4,7 +4,7 @@
 
 ![Logo](logo.png)
 
-## 🇷 Русский
+## 🇷🇺 Русский
 
 ### Описание
 QuizApp — это приложение для macOS, которое помогает готовиться к тестам и контрольным работам. Создавайте свои вопросы, добавляйте переводы и тренируйтесь в удобном режиме.
@@ -30,23 +30,23 @@ QuizApp — это приложение для macOS, которое помог�
 
 ### 📸 Скриншоты (Русский)
 
-| Главное меню | Тренировка | Режим тренировки |
+| Меню | Вопросы | Режим тренировки |
 |---|---|---|
-| ![Главное меню](screenshots/ru/01_main.png) | ![Тренировка](screenshots/ru/02_training.png) | ![Тренировка](screenshots/ru/03_training_session.png) |
+| ![Меню](screenshots/ru/01_main.png) | ![Вопросы](screenshots/ru/02_training.png) | ![Режим тренировки](screenshots/ru/03_training_session.png) |
 
-| Добавить вопрос | Настройки | Управление |
+| Добавить вопросы | Настройки | Управление вопросами |
 |---|---|---|
-| ![Добавить](screenshots/ru/04_add_question.png) | ![Настройки](screenshots/ru/05_settings.png) | ![Управление](screenshots/ru/06_manage.png) |
+| ![Добавить вопросы](screenshots/ru/04_add_question.png) | ![Настройки](screenshots/ru/05_settings.png) | ![Управление вопросами](screenshots/ru/06_manage.png) |
 
 ### 📸 Скриншоты (English)
 
-| Main Menu | Training | Training Mode |
+| Menu | Training Mode | Training |
 |---|---|---|
-| ![Main Menu](screenshots/en/01_main.png) | ![Training](screenshots/en/02_training.png) | ![Training](screenshots/en/03_training_session.png) |
+| ![Menu](screenshots/en/01_main.png) | ![Training Mode](screenshots/en/02_training.png) | ![Training](screenshots/en/03_training_session.png) |
 
-| Add Question | Settings | Manage |
+| Add Question | Settings | Manage Questions |
 |---|---|---|
-| ![Add](screenshots/en/04_add_question.png) | ![Settings](screenshots/en/05_settings.png) | ![Manage](screenshots/en/06_manage.png) |
+| ![Add Question](screenshots/en/04_add_question.png) | ![Settings](screenshots/en/05_settings.png) | ![Manage Questions](screenshots/en/06_manage.png) |
 
 ### 🛠 Установка на macOS
 
