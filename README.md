@@ -4,56 +4,54 @@
 
 ![Logo](logo.png)
 
-## 🇷🇺 Русский
+## 🇷 Русский
 
 ### Описание
-QuizApp — это приложение для macOS, которое помогает готовиться к тестам и контрольным работам. С возможностью добавления своих вопросов.
+QuizApp — это приложение для macOS, которое помогает готовиться к тестам и контрольным работам. Создавайте свои вопросы, добавляйте переводы и тренируйтесь в удобном режиме.
 
 ### ✨ Возможности
 
-- **🚀 Быстрый тест** — прохождение теста из всех вопросов в случайном порядке
-- **📚 Мои тесты** — создание собственных наборов вопросов
-  - Ручной выбор вопросов
-  - 🎲 Случайный выбор определённого количества вопросов
-- **➕ Добавление вопросов** — создание своих вопросов с правильными и неправильными ответами
-- **🤖 ИИ-генерация** — автоматическая генерация неправильных ответов с помощью ИИ (Qwen 2.5)
+- **🚀 Быстрый тест** — прохождение теста из всех ваших вопросов в случайном порядке
+- **📖 Тренировка** — новый режим для изучения вопросов с переводами
+  - Показывает вопрос и ответ с переводом на русский
+  - Навигация вперёд и назад по вопросам
+  - Вопросы перемешиваются при каждом запуске
+  - Выбор конкретных вопросов для тренировки
+- **➕ Добавление вопросов** — создание своих вопросов с:
+  - Вопросом на английском
+  - Правильным ответом
+  - Тремя неправильными вариантами
+  - Переводами вопроса и ответа на русский (опционально)
+- **🤖 ИИ-генерация** — автоматическая генерация неправильных ответов с помощью ИИ (Qwen 2.5 через OpenRouter)
 - **📋 Управление вопросами** — просмотр, удаление и сброс вопросов
 - **🌐 Два языка** — русский и английский интерфейс
-- **📖 Переводы** — показ перевода вопроса и ответа после неправильного ответа
+- **📖 Переводы** — показ перевода вопроса и ответа после неправильного ответа в тесте
 - **⚙️ Настройки** — управление переводами, API ключом ИИ и языком
 
 ### 📸 Скриншоты (Русский)
 
-| Главное меню | Тест | Неправильный ответ |
+| Главное меню | Тренировка | Режим тренировки |
 |---|---|---|
-| ![Главное меню](screenshots/ru/01_main.png) | ![Тест](screenshots/ru/02_quiz.png) | ![Неправильный ответ](screenshots/ru/03_wrong.png) |
+| ![Главное меню](screenshots/ru/01_main.png) | ![Тренировка](screenshots/ru/02_training.png) | ![Тренировка](screenshots/ru/03_training_session.png) |
 
-| Результаты | Добавить вопрос | Управление |
+| Добавить вопрос | Настройки | Управление |
 |---|---|---|
-| ![Результаты](screenshots/ru/04_results.png) | ![Добавить](screenshots/ru/05_add.png) | ![Управление](screenshots/ru/06_manage.png) |
-
-| Настройки |
-|---|
-| ![Настройки](screenshots/ru/07_settings.png) |
+| ![Добавить](screenshots/ru/04_add_question.png) | ![Настройки](screenshots/ru/05_settings.png) | ![Управление](screenshots/ru/06_manage.png) |
 
 ### 📸 Скриншоты (English)
 
-| Main Menu | Quiz | Wrong Answer |
+| Main Menu | Training | Training Mode |
 |---|---|---|
-| ![Main Menu](screenshots/en/01_main.png) | ![Quiz](screenshots/en/02_quiz.png) | ![Wrong Answer](screenshots/en/03_wrong.png) |
+| ![Main Menu](screenshots/en/01_main.png) | ![Training](screenshots/en/02_training.png) | ![Training](screenshots/en/03_training_session.png) |
 
-| Results | Add Question | Manage |
+| Add Question | Settings | Manage |
 |---|---|---|
-| ![Results](screenshots/en/04_results.png) | ![Add](screenshots/en/05_add.png) | ![Manage](screenshots/en/06_manage.png) |
-
-| Settings | My Tests | Create Test |
-|---|---|---|
-| ![Settings](screenshots/en/07_settings.png) | ![Tests](screenshots/en/08_tests.png) | ![Create](screenshots/en/09_create_test.png) |
+| ![Add](screenshots/en/04_add_question.png) | ![Settings](screenshots/en/05_settings.png) | ![Manage](screenshots/en/06_manage.png) |
 
 ### 🛠 Установка на macOS
 
 #### Способ 1: Готовое приложение
-1. Скачайте `QuizApp.app` из раздела [Releases](https://github.com/noym3s/QuizApp/releases)
+1. Скачайте `QuizApp.app` из папки [`macOS/`](macOS/) или раздела [Releases](https://github.com/NoYm3s/QuizApp/releases)
 2. Переместите в папку `Программы` (Applications)
 3. Откройте приложение двойным кликом
 
@@ -63,7 +61,7 @@ QuizApp — это приложение для macOS, которое помог�
 xcode-select --install
 
 # Клонирование репозитория
-git clone https://github.com/noym3s/QuizApp.git
+git clone https://github.com/NoYm3s/QuizApp.git
 cd QuizApp/macOS
 
 # Компиляция
@@ -91,7 +89,8 @@ open QuizApp.app
 ```
 QuizApp/
 ├── macOS/
-│   └── main.swift          # Исходный код macOS приложения
+│   ├── main.swift          # Исходный код macOS приложения
+│   └── QuizApp.app         # Готовое приложение
 ├── Windows/
 │   └── quiz.html           # HTML версия для Windows
 ├── screenshots/
@@ -106,25 +105,31 @@ QuizApp/
 ## 🇬🇧 English
 
 ### Description
-QuizApp is a native macOS application that helps you prepare for tests and quizzes. It allows you to to add your own questions.
+QuizApp is a native macOS application that helps you prepare for tests and quizzes. Create your own questions, add translations, and practice in a convenient mode.
 
 ### ✨ Features
 
 - **🚀 Quick Quiz** — take a test with all your questions in random order
-- **📚 My Tests** — create custom question sets
-  - Manual question selection
-  - 🎲 Random selection of a specific number of questions
-- **➕ Add Questions** — create your own questions with correct and wrong answers
-- **🤖 AI Generation** — automatic wrong answer generation using AI (Qwen 2.5)
+- **📖 Training** — new mode for studying questions with translations
+  - Shows question and answer with Russian translation
+  - Forward and backward navigation
+  - Questions are shuffled each time
+  - Select specific questions for training
+- **➕ Add Questions** — create your own questions with:
+  - Question in English
+  - Correct answer
+  - Three wrong options
+  - Question and answer translations to Russian (optional)
+- **🤖 AI Generation** — automatic wrong answer generation using AI (Qwen 2.5 via OpenRouter)
 - **📋 Manage Questions** — view, delete and reset questions
 - **🌐 Two Languages** — Russian and English interface
-- **📖 Translations** — show question and answer translations after wrong answers
+- **📖 Translations** — show question and answer translations after wrong answers in quiz
 - **⚙️ Settings** — manage translations, AI API key and language
 
 ### 🛠 Installation on macOS
 
 #### Method 1: Pre-built App
-1. Download `QuizApp.app` from [Releases](https://github.com/noym3s/QuizApp/releases)
+1. Download `QuizApp.app` from [`macOS/`](macOS/) folder or [Releases](https://github.com/NoYm3s/QuizApp/releases)
 2. Move to `Applications` folder
 3. Open the app by double-clicking
 
@@ -134,7 +139,7 @@ QuizApp is a native macOS application that helps you prepare for tests and quizz
 xcode-select --install
 
 # Clone repository
-git clone https://github.com/noym3s/QuizApp.git
+git clone https://github.com/NoYm3s/QuizApp.git
 cd QuizApp/macOS
 
 # Compile
@@ -162,7 +167,8 @@ To generate wrong answers using AI:
 ```
 QuizApp/
 ├── macOS/
-│   └── main.swift          # macOS app source code
+│   ├── main.swift          # macOS app source code
+│   └── QuizApp.app         # Pre-built application
 ├── Windows/
 │   └── quiz.html           # HTML version for Windows
 ├── screenshots/
@@ -176,47 +182,9 @@ QuizApp/
 
 ## 🪟 Windows Version
 
-### Установка на Windows
+Для Windows доступна HTML-версия приложения. Откройте `Windows/quiz.html` в любом браузере.
 
-1. Скачайте файл **`quiz.html`** из папки [`Windows/`](Windows/) на GitHub
-2. Сохраните его на рабочий стол или в любую папку
-3. Откройте файл двойным кликом — он запустится в браузере (Chrome, Edge, Firefox)
-
-**Ничего устанавливать не нужно!** Приложение работает прямо в браузере.
-
-### Функции Windows-версии:
-- ✅ Возможность добавлять свои вопросы
-- ✅ Случайный порядок вопросов и ответов
-- ✅ Подсветка правильных/неправильных ответов
-- ✅ Экран результатов с процентом
-- ✅ Переключение языка RU/EN (кнопка вверху справа)
-- ✅ Кнопка "Пройти заново"
-
-### Для macOS:
-HTML-версию также можно открыть на Mac — просто откройте `Windows/quiz.html` в Safari.
-
----
-
-## 🪟 Windows Version
-
-### Installation on Windows
-
-1. Download the **`quiz.html`** file from the [`Windows/`](Windows/) folder on GitHub
-2. Save it to your desktop or any folder
-3. Double-click the file — it will open in your browser (Chrome, Edge, Firefox)
-
-**No installation required!** The app runs directly in the browser.
-
-### Windows Version Features:
-- ✅ Add your own questions
-- ✅ Random question and answer order
-- ✅ Correct/wrong answer highlighting
-- ✅ Results screen with percentage
-- ✅ RU/EN language toggle (button in top right)
-- ✅ "Restart" button
-
-### For macOS:
-The HTML version also works on Mac — just open `Windows/quiz.html` in Safari.
+For Windows, an HTML version is available. Open `Windows/quiz.html` in any browser.
 
 ---
 
